@@ -13,8 +13,8 @@ def test_get_pets():
 
 def test_get_pet():
     pet_id = 123
-    pets = requests.get(f"http://0.0.0.0:8080/pets/{pet_id}")
-    assert pets is not None
+    response = requests.get(f"http://0.0.0.0:8080/pets/{pet_id}")
+    assert response.status_code == 200
 
 
 def test_delete_pet():
