@@ -128,9 +128,16 @@ paths:
         type: string
       responses:
         '200':
-          description: successful operation
+          description: A dataset object.
           schema:
-            "$ref": "#/definitions/Dataset"
+            type: object
+            properties:
+              id:
+                type: integer
+                example: 4
+              name:
+                type: string
+                example: Arthur Dent
     put:
       tags:
       - datasets
