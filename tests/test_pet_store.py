@@ -7,19 +7,8 @@
 import requests
 
 
-def test_get_pets():
-    assert True
-
-
 def test_get_pet():
     pet_id = 123
     response = requests.get(f"http://0.0.0.0:8080/pets/{pet_id}")
     assert response.status_code == 200
 
-
-def test_delete_pet():
-    assert True
-
-
-def test_update_pet():
-    assert True
